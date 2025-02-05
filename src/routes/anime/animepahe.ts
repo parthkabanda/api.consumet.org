@@ -7,7 +7,7 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   fastify.get('/', (_, rp) => {
     rp.status(200).send({
       intro:
-        "Welcome to the animepahe provider: check out the provider's website @ https://animepahe.com/",
+        "Welcome to the animepahe provider: check out the provider's website @ https://animepahe.ru/",
       routes: ['/:query', '/info/:id', '/watch/:episodeId'],
       documentation: 'https://docs.consumet.org/#tag/animepahe',
     });
